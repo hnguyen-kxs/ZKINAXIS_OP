@@ -1,0 +1,36 @@
+@AbapCatalog.extensibility.extensible: true
+@EndUserText.label: 'Kinaxis Odata Service def.'
+define service ZUI_KX_ODATA_OP {
+  expose ZC_KX_Allocation_OP;
+  expose ZC_KX_AllocationPlanOrder_OP;
+  expose ZC_KX_AllocationProdOrder_OP;
+  expose ZC_KX_AllocationPurOrder_OP;
+  expose ZC_KX_BillOfMaterial_OP;
+  expose ZC_KX_BillOfMaterialSales_OP;
+  expose ZC_KX_Customer_OP;
+  expose ZC_KX_DeliveryReqmts_OP;
+  expose ZC_KX_FactoryCalendar_OP;
+  expose ZC_KX_IndependentDemandPIR_OP;
+  expose ZC_KX_InfoRecords_OP;
+  expose ZC_KX_LocationStock_OP;
+  expose ZC_KX_MRPContr_OP;
+  expose ZC_KX_OrderStock_OP;
+  expose ZC_KX_PartPlanningCalendar_OP;
+  expose ZC_KX_PlannedOrder_OP;
+  expose ZC_KX_ProdPlantValuation_OP;
+  expose ZC_KX_ProductionOrder_OP;
+  expose ZC_KX_ProductionVersion_OP;
+  expose ZC_KX_ProdUoM_OP;
+  expose ZC_KX_ProjectStock_OP;
+  expose ZC_KX_PurchaseDocument_OP;
+  expose ZC_KX_PurchaseRequisition_OP;
+  expose ZC_KX_PurchGrp_OP;
+  expose ZC_KX_Quota_OP;
+  expose ZC_KX_SchedulingAgreement_OP;
+  expose ZC_KX_SDItemRequirements_OP;
+  expose ZC_KX_SpecialStock_OP;
+  expose ZC_KX_Supplier_OP;
+  expose ZC_KX_SupplierConfirmation_OP;
+  expose ZC_KX_UoM_OP;
+  expose ZC_KX_VendorStock_OP;
+}

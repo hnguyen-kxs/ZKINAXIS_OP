@@ -1,0 +1,70 @@
+@AbapCatalog.viewEnhancementCategory: [#PROJECTION_LIST, #UNION ]
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Consumption View - Supplier Confirmation'
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.usageType:{
+    serviceQuality: #X,
+    sizeCategory: #M,
+    dataClass: #MIXED
+}
+@VDM.viewType: #CONSUMPTION
+define view entity ZC_KX_SupplierConfirmation_OP
+  as select from ZI_KX_SupplConfirmationEnh_OP
+{
+  key  PurchasingDocumentNumber,
+  key  ItemNumberOfPurchasingDocument,
+  key  SequentialSupplierConfirmation,
+       BatchNumber,
+       QuantityReducedMRP,
+       ConfirmationCategory,
+       DlvDateSupplierConfirmation,
+       ManufacturerPartNumber,
+       CreationDateOfConfirmation,
+       CreateIndSupplierConfirmation,
+       TimeConfirmationCreated,
+       ConfirmationRelevantPlanning,
+       ConfirmationDeletionInd,
+       DateCategoryDeliveryDate,
+       QtyPerSupplierConfirmation,
+       MfrPartProfile,
+       DeliveryDateTimeSpot,
+       Delivery,
+       DeliveryItem,
+       ReferenceDocumentNumber,
+       Name,
+       MRPArea,
+       OrderPriceUnit,
+       DenominatorForPriceConversion,
+       NumeratorForPriceConversion,
+       PurchasingDocumentCategory,
+       SupplierToBeSupplied,
+       NumberOfPurchasingInfoRecord,
+       StockType,
+       AccountAssignmentCategory,
+       SubcontractingSupplier,
+       StorageLocation,
+       MaterialNumber,
+       PurchaseOrderUnitOfMeasure,
+       PurchaseOrderQuantity,
+       NetPriceInPurchasingDocument,
+       PriceUnit,
+       PlannedDeliveryTimeInDays,
+       ItemCategoryInPurchasingDoc,
+       SpecialStockIndicator,
+       DenominatorForUnitConversion,
+       NumeratorForUnitConversion,
+       GRProcessingTimeInDays,
+       Plant,
+       PurchasingDocumentDate,
+       PurchasingDocumentType,
+       PurchasingOrganization,
+       ReleaseIndicatorPurchasingDoc,
+       StartOfValidityPeriod,
+       EndOfValidityPeriod,
+       SupplierAccountNumber,
+       GoodsSupplier,
+       DelIndicatorInPurchasingDoc,
+       SupplyingPlantStckTransOrd,
+       StatusOfPurchasingDocument,
+       Currency
+}
