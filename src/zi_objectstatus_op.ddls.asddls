@@ -9,16 +9,11 @@
 }
 @VDM.viewType: #BASIC
 define view entity ZI_ObjectStatus_OP
-  as select from jest as _ObjStat
+  as select from jest                 as _ObjStat
+    inner join   ZI_TVARVC_ObjStat_OP as _TvarvcObjStat on _ObjStat.stat = _TvarvcObjStat.Low
 {
   key _ObjStat.objnr as ObjectNumber,
   key _ObjStat.stat  as ObjectStatus
 }
 where
-  (
-       _ObjStat.stat  = 'I0045'
-    or _ObjStat.stat  = 'I0046'
-    or _ObjStat.stat  = 'I0012'
-    or _ObjStat.stat  = 'I0076'
-  )
-  and  _ObjStat.inact = ''
+  _ObjStat.inact = ''

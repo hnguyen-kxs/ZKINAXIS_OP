@@ -10,6 +10,8 @@ define service ZUI_KX_ODATA_OP {
   expose ZC_KX_Customer_OP;
   expose ZC_KX_DeliveryReqmts_OP;
   expose ZC_KX_FactoryCalendar_OP;
+  expose ZC_KX_HistoricalSupplyBuy_OP;
+  expose ZC_KX_HistoricalSupplyMake_OP;
   expose ZC_KX_IndependentDemandPIR_OP;
   expose ZC_KX_InfoRecords_OP;
   expose ZC_KX_LocationStock_OP;
@@ -31,6 +33,14 @@ define service ZUI_KX_ODATA_OP {
   expose ZC_KX_SpecialStock_OP;
   expose ZC_KX_Supplier_OP;
   expose ZC_KX_SupplierConfirmation_OP;
-  expose ZC_KX_UoM_OP;
   expose ZC_KX_VendorStock_OP;
+  expose ZC_KX_HistoricalDemand_OP;
+  expose ZC_KX_SourceList_OP;
+  expose ZC_KX_CustomerStock_OP;
+  expose ZC_KX_WorkCenter_OP;
+  expose ZC_KX_ConstraintUoM_OP;
+  expose ZC_KX_CapacityHeader_OP;
+  expose ZC_KX_CapacityShift_OP;
+  expose ZC_KX_SourceConstraint_OP;
+  expose ZC_KX_UoM_OP;
 }

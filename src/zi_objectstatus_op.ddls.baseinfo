@@ -3,6 +3,7 @@
 {
 "FROM":
 [
+"ZI_TVARVC_OBJSTAT_OP",
 "JEST"
 ],
 "ASSOCIATED":

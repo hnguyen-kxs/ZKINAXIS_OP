@@ -30,6 +30,7 @@ define view entity ZI_ProductionVersion_OP
       _ProdVer.sobsl                          as SpecialProcurementType,
       _ProdVer.stlan                          as BOMUsage,
       _ProdVer.verto                          as DistKeyForQtyProduced,
+      _ProdVer.prfg_f                         as ProductionVersionCheckStatus,
       _ProdPlant.TransferPlant,
       _ProdPlant.ProcurementSubType,
       _ProdPlant.StandardPrice,

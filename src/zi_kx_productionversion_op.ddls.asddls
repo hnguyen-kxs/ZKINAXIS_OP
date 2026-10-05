@@ -27,6 +27,7 @@ define view entity ZI_KX_ProductionVersion_OP
       SpecialProcurementType,
       BOMUsage,
       DistKeyForQtyProduced,
+      ProductionVersionCheckStatus,
       TransferPlant,
       ProcurementSubType,
       StandardPrice,

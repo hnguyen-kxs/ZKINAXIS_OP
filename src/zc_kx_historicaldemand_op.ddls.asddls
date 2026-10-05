@@ -1,0 +1,80 @@
+@AbapCatalog.viewEnhancementCategory: [#PROJECTION_LIST, #UNION ]
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Historical Demand - Consumption'
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.usageType:{
+    serviceQuality: #X,
+    sizeCategory: #S,
+    dataClass: #MIXED
+}
+@VDM.viewType: #CONSUMPTION
+define view entity ZC_KX_HistoricalDemand_OP
+  with parameters
+    p_days : int2
+  as select from ZI_KX_HistoricalDemand_OP( p_days: $parameters.p_days  )
+{
+  key Delivery,
+  key DeliveryItem,
+  key SalesDocument,
+  key SalesDocumentItem,
+  key DeliveryScheduleLine,
+  key Customer,
+      ShipToParty,
+      DeliveryType,
+      ActGdsMvmntDate,
+      MRPArea,
+      DeliveryGroup,
+      ActualQuantityDelivered,
+      StorageLocation,
+      Material,
+      MaterialAvailDate,
+      BaseUnitOfMeasure,
+      NetPrice,
+      Denominator,
+      Numerator,
+      ReferenceDocument,
+      ReferenceItem,
+      SalesUnit,
+      Plant,
+      RequirementsType,
+      MRPAreaSales,
+      DeliveryGroupSales,
+      CumulConfirmedQty,
+      UnitOfMeasure,
+      PricingUnit,
+      PartDlv,
+      ItmRelevForDeliv,
+      StorageLocationSales,
+      DeliveryPriority,
+      MaterialSales,
+      BaseUnitOfMeasureSales,
+      NetPriceSales,
+      NetValue,
+      PurchaseOrderItem,
+      ItemCategory,
+      WBSElement,
+      Route,
+      BOMExplosionNumber,
+      BOMKeyDate,
+      HigherLevelItem,
+      DenominatorSales,
+      NumeratorSales,
+      ConversionFactor,
+      SalesUnitSales,
+      ShippingPoint,
+      DocumentCurrency,
+      PlantSales,
+      TargetQuantityUoM,
+      TargetQuantity,
+      ConfirmedQty,
+      ScheduleLineDate,
+      MaterialAvailDateSales,
+      CreatedOnItem,
+      CreatedOnHeader,
+      SoldToParty,
+      SalesDocumentType,
+      CustomerGroup,
+      Industry,
+      AccountGroup,
+      Name
+}

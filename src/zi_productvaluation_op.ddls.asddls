@@ -9,8 +9,8 @@
 }
 @VDM.viewType: #BASIC
 define view entity ZI_ProductValuation_OP
-  as select from Mbv_Mbew           as _ProdVal
-    inner join   ZI_TVARVC_Plant_OP as _TvarvcPlant on _ProdVal.bwkey = _TvarvcPlant.Low
+  as select from Mbv_Mbew           as _ProdVal    
+inner join   ZI_TVARVC_Plant_OP as _TvarvcPlant on _ProdVal.bwkey = _TvarvcPlant.Low
 {
   key _ProdVal.bwkey                            as ValuationArea,
   key _ProdVal.bwtar                            as ValuationType,

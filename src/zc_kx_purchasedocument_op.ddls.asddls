@@ -8,6 +8,7 @@
     dataClass: #MIXED
 }
 @VDM.viewType: #CONSUMPTION
+
 define view entity ZC_KX_PurchaseDocument_OP
   as select from ZI_KX_PurchaseDocSupplier_OP
 {

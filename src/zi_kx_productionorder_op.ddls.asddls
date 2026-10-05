@@ -45,6 +45,5 @@ define view entity ZI_KX_ProductionOrder_OP
       _Order.Currency,
       _Order.Plant
 }
-
 where
   _ObjStat.ObjectNumber is null

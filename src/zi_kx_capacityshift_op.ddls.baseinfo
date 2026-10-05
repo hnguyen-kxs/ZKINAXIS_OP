@@ -3,8 +3,9 @@
 {
 "FROM":
 [
-"ZI_TVARVC_PLANT_OP",
-"PLAF"
+"ZI_CAPACITYHEADER_OP",
+"KAPA",
+"TC37A"
 ],
 "ASSOCIATED":
 [],

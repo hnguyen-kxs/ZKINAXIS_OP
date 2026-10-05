@@ -27,6 +27,7 @@ define view entity ZC_KX_ProductionVersion_OP
       SpecialProcurementType,
       BOMUsage,
       DistKeyForQtyProduced,
+      ProductionVersionCheckStatus,
       TransferPlant,
       ProcurementSubType,
       StandardPrice,
@@ -45,5 +46,4 @@ define view entity ZC_KX_ProductionVersion_OP
       HasProductionVersion,
       SpecialProcurementIndicator,
       FactoryCalendar
-
 }

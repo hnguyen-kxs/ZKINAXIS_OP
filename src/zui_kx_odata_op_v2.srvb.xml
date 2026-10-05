@@ -6,7 +6,7 @@
     <METADATA>
      <NAME>ZUI_KX_ODATA_OP_V2</NAME>
      <TYPE>SRVB/SVB</TYPE>
-     <DESCRIPTION>Kinaxis Odata Services - On-Prem</DESCRIPTION>
+     <DESCRIPTION>Service Binding V2</DESCRIPTION>
     </METADATA>
     <CONTENT>
      <BIND_TYPE_IMPL>
@@ -38,7 +38,6 @@
     </CONTENT>
     <CONTRACT>C1</CONTRACT>
     <RELEASE_SUPPORTED>true</RELEASE_SUPPORTED>
-    <PUBLISHED>true</PUBLISHED>
     <BINDING_CREATED>true</BINDING_CREATED>
    </SRVB>
   </asx:values>

@@ -8,7 +8,6 @@
     dataClass: #MIXED
 }
 @VDM.viewType: #BASIC
-
 define view entity ZI_OrderItem_OP
   as select from afpo               as _OrderItem
     inner join   ZI_TVARVC_Plant_OP as _TvarvcPlant on _OrderItem.pwerk = _TvarvcPlant.Low
